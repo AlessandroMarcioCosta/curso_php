@@ -1,5 +1,4 @@
 <?php
-
 /*
 $anoNascimento = 1990;
 
