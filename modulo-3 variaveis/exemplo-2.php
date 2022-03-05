@@ -5,7 +5,7 @@ $anoNascimento = 1990;
 
 $nomeCompleto = "";*/
 //Na linha de baixo temos uma variável com númerono nome
-
+//uso de variaveis padrão camel case exemplo $anoNascimento <--recomendação boa pratica
 $nome1 = "Alessandro";
 
 $sobrenome = "Márcio";
