@@ -1,6 +1,6 @@
 <?php
 
-$nome = "Alessandro";
+$nome = "Alessandro"; //variavel
 
 echo $nome;
 echo "<br>";
