@@ -11,7 +11,7 @@ $nome1 = "Alessandro";
 
 $sobrenome = "Márcio";
 
-$nomeCompleto = $nome1 . " " . $sobrenome;
+$nomeCompleto = $nome1 . " " . $sobrenome;  //concatenar com espaço para separar palavras
 
 echo $nomeCompleto;
 
