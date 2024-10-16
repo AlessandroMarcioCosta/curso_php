@@ -1,4 +1,5 @@
 <?php
+//Estudo da estrutura do if (se)
 //Estruturas de comandos de fluxo ou estruturas de decisão if else
 
 $qualASuaIdade = 15;
