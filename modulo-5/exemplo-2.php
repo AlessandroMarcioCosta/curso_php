@@ -1,31 +1,14 @@
 <?php
 
-/*
-$anoNascimento = 1990;
+define("BANCO_DE_DADOS", [
 
-$nomeCompleto = "";*/
-//Na linha de baixo temos uma variável com númerono nome
+    '127.0.0.1',
+    'root',
+    'password',
+    'test'
 
-$nome1 = "Alessandro";
+]);
 
-$sobrenome = "Márcio";
-
-$nomeCompleto = $nome1 . " " . $sobrenome;
-
-echo $nomeCompleto;
-
-exit;
-
-echo $nome1;
-
-echo "<br/>";
-
-unset($nome1);
-
-if (isset($nome1)) {
-
-    echo $nome1;
-
-}
+print_r(BANCO_DE_DADOS)
 
 ?>

@@ -1,9 +1,7 @@
 <?php
 
-$nome = "Alessandro";
+define("SERVIDOR", "127.0.0.1");
 
-echo $nome;
-echo "<br>";
-var_dump($nome);
+echo SERVIDOR;
 
 ?>
