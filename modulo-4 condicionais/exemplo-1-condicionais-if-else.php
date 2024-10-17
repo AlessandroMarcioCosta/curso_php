@@ -1,6 +1,4 @@
-<html>
-	<body>
-		<?php
+<?php
 //Estudo da estrutura do if (se)
 //Estruturas de comandos de fluxo ou estruturas de decisão if else
 
@@ -32,7 +30,5 @@ $idadeMelhor = 65;
 
 	echo ($qualASuaIdade < $idadeMaior)? "Menor de Idade":"Maior de Idade";
 
-?>
-	</body>
-</html>
 
+?>
