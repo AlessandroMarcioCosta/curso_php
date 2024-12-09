@@ -5,29 +5,39 @@
         private $motor;                     //atributos
         private $ano;
 
-        public function getModelo(){
+        public function setModelo($modelo){
 
             return $this->modelo;
         }
+    
+        public function setMotor($motor):float{
 
-        public function setModelo($modelo){
-
-            $this->modelo = $modelo;
+            return $this->motor;
         }
+    
+        public function setAno($ano):int{
+    
+            $this->ano;
+        }
+   
+        public function exibir(){
+
+            return array(
+                    "modelo"=>$this->getModelo(),
+                    "motor"=>$this->getMotor(),
+                    "ano"=>$this->getAno()
+            );
+
+        }
+    
+    }
+$gol = new Carro();
+$gol->setModelo("GOL GT");
+$gol->setMotor("1.6");
+$gol->setAno("2017");
+      
   
-
-        public function getAno(){
-
-            return $this->ano;
-        }
+var_dump($gol->exibir());
     
-        public function setano($ano){
-    
-            $this->ano = $ano;
-        }
-    
-}
-
-
 
 ?>
