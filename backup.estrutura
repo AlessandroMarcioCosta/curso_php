@@ -1,0 +1,48 @@
+
+services:
+  app:
+    build: .
+    container_name: php_study_app
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/var/www/html
+      - ./php/php.ini:/usr/local/etc/php/conf.d/custom.ini
+      - ./docker/apache/000-default.conf:/etc/apache2/sites-enabled/000-default.conf
+    depends_on:
+      - db
+    networks:
+      - php_network
+
+  db:
+    image: mariadb:10.6
+    container_name: php_study_db
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: app_db
+      MYSQL_USER: dev
+      MYSQL_PASSWORD: dev123
+    volumes:
+      - mysql_data:/var/lib/mysql
+    ports:
+      - "3306:3306"
+    networks:
+      - php_network
+
+  adminer:
+    image: adminer
+    container_name: php_study_adminer
+    restart: always
+    ports:
+      - "8081:8080"
+    depends_on:
+      - db
+    networks:
+      - php_network
+
+volumes:
+  mysql_data:
+
+networks:
+  php_network:
+    driver: bridge
