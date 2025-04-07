@@ -25,6 +25,3 @@ class programador extends Pessoa{
 $objeto =new pessoa();
 
 echo $objeto->verDados(); 
-
-
-?>
